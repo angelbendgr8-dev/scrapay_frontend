@@ -4,15 +4,9 @@ import { useUser } from "@auth0/nextjs-auth0/client";
 import {
   Flex,
   Box,
-  FormControl,
-  FormLabel,
-  Input,
-  Checkbox,
   Stack,
   Button,
   Heading,
-  Text,
-  useColorModeValue,
   Image,
   Spinner,
 } from "@chakra-ui/react";
@@ -45,20 +39,17 @@ export default function Index() {
           />
         </Stack>
         <Box rounded={"lg"} bg={"white"} boxShadow={"lg"} p={8}>
-          {
-            isLoading ?(
-              <Spinner colorScheme="blue" />
-            ):(
-              <a style={{ color: "blue", textDecoration: "underline" }}
+          {isLoading ? (
+            <Spinner colorScheme="blue" />
+          ) : (
+            <a
+              style={{ color: "blue", textDecoration: "underline" }}
               href="/api/auth/login"
             >
               Login
             </a>
-
-            )
-          }
-
-          {" "} to manage your books
+          )}{" "}
+          to manage your books
         </Box>
       </Stack>
     </Flex>
