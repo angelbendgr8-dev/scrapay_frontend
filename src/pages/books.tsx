@@ -124,7 +124,6 @@ const Books = () => {
               <Tr>
                 <Th
                   colSpan={4}
-                  bg="red.300"
                   textAlign={"center"}
                   color="black"
                   alignItems={"center"}
