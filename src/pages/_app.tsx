@@ -12,7 +12,7 @@ import {
 } from "@apollo/client";
 
 const client = new ApolloClient({
-  uri: "http://localhost:3000/graphql",
+  uri: "https://scrapay-backend.onrender.com/graphql",
   cache: new InMemoryCache(),
 });
 
