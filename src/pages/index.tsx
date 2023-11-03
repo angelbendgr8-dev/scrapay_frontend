@@ -9,6 +9,7 @@ import {
   Heading,
   Image,
   Spinner,
+  Link,
 } from "@chakra-ui/react";
 import { isEmpty } from "lodash";
 import { useRouter } from "next/router";
@@ -42,12 +43,12 @@ export default function Index() {
           {isLoading ? (
             <Spinner colorScheme="blue" />
           ) : (
-            <a
+            <Link
               style={{ color: "blue", textDecoration: "underline" }}
               href="/api/auth/login"
             >
               Login
-            </a>
+            </Link>
           )}{" "}
           to manage your books
         </Box>

@@ -7,6 +7,7 @@ import {
   HStack,
   Icon,
   IconButton,
+  Link,
   Menu,
   MenuButton,
   MenuDivider,
@@ -126,7 +127,7 @@ export const MobileNav = ({
               <MenuDivider />
               <MenuItem display="flex" flexDir={"row"} onClick={handleSignOut}>
                 <Icon mr={2} as={BiLogOut} />
-                <a href="/api/auth/logout">Logout</a>
+                <Link href="/api/auth/logout">Logout</Link>
               </MenuItem>
             </MenuList>
           </Menu>
