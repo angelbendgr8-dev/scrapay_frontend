@@ -1,0 +1,7 @@
+# updates a particular book
+mutation updateBook($updateInfo: UpdateBookInput!) {
+  updateBook(updateBookInput: $updateInfo) {
+    name
+    description
+  }
+}

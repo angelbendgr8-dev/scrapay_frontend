@@ -1,0 +1,8 @@
+# get  all the books in the db
+query Query {
+  books {
+    id
+    name
+    description
+  }
+}

@@ -1,0 +1,7 @@
+# deletes a single book
+mutation deleteBook($id: Int!) {
+  removeBook(id: $id) {
+    name
+    description
+  }
+}
