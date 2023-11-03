@@ -4,10 +4,12 @@ import {
   Icon,
   IconButton,
   Link,
+  Spinner,
   Table,
   TableContainer,
   Tbody,
   Td,
+  Text,
   Th,
   Thead,
   Tr,
@@ -120,7 +122,16 @@ const Books = () => {
           <Tbody>
             {isEmpty(books) ? (
               <Tr>
-                <Th color="black">Action</Th>
+                <Th
+                  colSpan={4}
+                  bg="red.300"
+                  textAlign={"center"}
+                  color="black"
+                  alignItems={"center"}
+                  justifyContent={"center"}
+                >
+                  {loading ? <Spinner /> : <Text>No books available</Text>}
+                </Th>
               </Tr>
             ) : (
               <>
